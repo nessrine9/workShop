@@ -1,0 +1,32 @@
+<mat-toolbar color="primary">
+  <div fxHide.gt-xs>
+      <button mat-icon-button (click)="onToggleSidenav()">
+          <mat-icon>menu</mat-icon>
+      </button>
+  </div>
+  <div>
+      <a [routerLink]="['home']">Carnet de Route</a>
+  </div>
+  <div fxFlex fxLayout="row" fxLayoutAlign="end" fxHide.xs>
+      <ul fxLayout fxLayoutGap="15px" class="navigation-items" fxLayoutAlign="end">
+        <li>
+            <a [routerLink]="['vehicules']">Nos Vehicules</a>
+        </li>  
+        <li>
+            <a [routerLink]="['historique']">Historique</a>
+        </li>
+        <li>
+              <a [routerLink]="['contact']">Contact US</a>
+          </li>
+          <li>
+              <a [routerLink]="['aboutus']">About US</a>
+          </li>
+          <li>
+            <a [routerLink]="['login']">Login</a>
+            /
+            <a [routerLink]="['signup']">Signup</a>
+        </li>
+      </ul>
+  </div>
+</mat-toolbar>
+
